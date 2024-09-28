@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallery - Where Creativity Connects</title>
+    <link rel="shortcut icon" href="assets/22.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/2378f38f26.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-content">
+    <!-- Left Content (Header and Download Buttons) -->
+    <div class="left-content">
+        <header>
+            <h1>Hallery</h1>
+            <h2>Where Creativity Connects</h2>
+            <div class="download-buttons">
+                <a href="m" target="_blank">
+                    <img src="assets/App_Store_(iOS)-Badge-Logo.wine.svg" alt="Download on the App Store"
+                         class="download-badge">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=art.hallery.hallery" target="_blank">
+                    <img src="assets/Google_Play-Badge-Logo.wine.svg" alt="Get it on Google Play"
+                         class="download-badge">
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Right Content (Slider) -->
+    <section class="slider">
+        <div class="slide-container">
+            <div class="slide fade">
+                <img src="assets/m1.png" alt="App Screenshot 1">
+            </div>
+            <div class="slide fade">
+                <img src="assets/m2.png" alt="App Screenshot 2">
+            </div>
+            <div class="slide fade">
+                <img src="assets/m3.png" alt="App Screenshot 3">
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("slide");
+
+        // Hide all slides
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // Move to the next slide
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        // Show the current slide
+        slides[slideIndex - 1].style.display = "block";
+
+        // Change slide every 1000 milliseconds (1 second)
+        setTimeout(showSlides, 10 * 1000); // You can increase this value for a slower slide change
+    }
+</script>
+
+</body>
+</html>
