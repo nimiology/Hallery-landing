@@ -6,6 +6,10 @@ body {
     padding: 0;
     background-color: #000000; /* Black background */
     overflow-x: hidden; /* Prevent horizontal scroll */
+    background-image: url('assets/header-bg.png');
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
 }
 
 /* Main Flex Container for Header and Slider */
@@ -28,7 +32,6 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #000000;
     padding: 0 20px;
 }
 
@@ -75,7 +78,6 @@ h2 {
     padding: 15px 30px;
     margin: 10px;
     background-color: #ffffff;
-    color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
