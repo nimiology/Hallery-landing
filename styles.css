@@ -127,8 +127,12 @@ h2 {
 }
 
 @keyframes fade {
-    from { opacity: 0.4 }
-    to { opacity: 1 }
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 /* Navigation Arrows */
@@ -223,5 +227,25 @@ footer a:hover {
 
     .slide img {
         max-width: 180px; /* Adjust image width */
+    }
+}
+
+.contact-container {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(104, 104, 104, 0.3); /* White background with 80% opacity */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    max-width: 400px;
+    width: 100%;
+
+    a {
+        color: #007BFF; /* Link color */
+        text-decoration: none; /* No underline */
+    }
+
+    a:hover {
+        text-decoration: underline; /* Underline on hover */
     }
 }
